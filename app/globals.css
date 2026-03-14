@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #7c69a1;
   --foreground: #190538;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #8f9ea1;
+    --background: hsla(290, 26%, 53%, 0.37);
     --foreground: #110e0e;
   }
 }
@@ -23,4 +23,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.data-background {
+  background-image: url('/aib.jpg'); /* References the file in your public folder */
+  background-size: cover; /* Makes the image cover the whole screen */
+  background-position: center; /* Keeps the center of the image visible */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Stops the background from scrolling */
 }
